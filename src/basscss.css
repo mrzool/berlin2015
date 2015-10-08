@@ -10,6 +10,7 @@
 @import 'basscss-background-colors';
 @import 'basscss-defaults';
 @import 'basscss-grid';
+@import 'basscss-responsive-white-space';
 
 /* @import 'basscss-base-forms'; */
 /* @import 'basscss-base-tables'; */
