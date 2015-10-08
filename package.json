@@ -1,0 +1,53 @@
+{
+  "name": "Berlin2015",
+  "version": "3.0.0",
+  "description": "Visual glimpses of a weird city",
+  "homepage": "http://mrzool.cc/berlin2015",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mrzool/berlin2015.git"
+  },
+  "keywords": [
+    "photography",
+    "berlin",
+    "minimalism",
+    "urban architecture"
+  ],
+  "author": "mrzool",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrzool/berlin2015/issues",
+    "email": "info@mrzool.cc"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.0.3",
+    "basscss": "latest",
+    "basscss-background-colors": "latest",
+    "basscss-base-reset": "latest",
+    "basscss-base-typography": "latest",
+    "basscss-borders": "latest",
+    "basscss-colors": "latest",
+    "basscss-defaults": "latest",
+    "basscss-positions": "latest",
+    "basscss-responsive-states": "latest",
+    "basscss-type-scale": "latest",
+    "basscss-utility-typography": "latest",
+    "basscss-white-space": "latest",
+    "basscss-grid": "latest",
+    "browser-sync": "^2.9.6",
+    "node-minify": "^1.2.1",
+    "parallelshell": "^2.0.0",
+    "postcss": "^5.0.8",
+    "postcss-browser-reporter": "^0.4.0",
+    "postcss-conditionals": "^2.0.0",
+    "postcss-css-variables": "^0.5.0",
+    "postcss-custom-media": "^5.0.0",
+    "postcss-import": "^7.0.0",
+    "watch": "^0.16.0"
+  },
+  "scripts": {
+    "start": "parallelshell 'npm run build:css' 'npm run server'",
+    "build:css": "watch 'node index.js' src/",
+    "server": "browser-sync start --server --files './*'"
+  }
+}
