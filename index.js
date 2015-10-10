@@ -10,7 +10,7 @@ var conditionals = require('postcss-conditionals')
 var customMedia = require("postcss-custom-media")
 
 // css to be processed
-var css = fs.readFileSync("src/basscss.css", "utf8")
+var css = fs.readFileSync("src/s.css", "utf8")
 
 // process css
 var output = postcss([autoprefixer])
@@ -19,7 +19,7 @@ var output = postcss([autoprefixer])
   .use(conditionals())
   .use(customMedia())
   .process(css, {
-    from: "./src/basscss.css",
+    from: "./src/s.css",
     to: "./css/s.css"
   })
   .css
